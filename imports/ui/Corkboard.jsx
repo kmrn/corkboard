@@ -4,9 +4,9 @@ import Post from './Post.jsx';
 export default class Corkboard extends Component {
   getPosts() {
     return [
-      { _id: 1, title: "Hey", text: "Hello world" },
-      { _id: 2, title: "Uh huh", text: "this is another post" },
-      { _id: 3, title: "big boy", text: "Here is some other stuff going on" }
+      { _id: 1, title: "Hey", text: "Hello world", author: "someguy" },
+      { _id: 2, title: "Uh huh", text: "this is another post", author: "cooldude20" },
+      { _id: 3, title: "big boy", text: "Here is some other stuff going on", author: "wowow" }
     ];
   }
 
