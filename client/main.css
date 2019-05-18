@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   /* /* padding: 10px;
   font-family: sans-serif; */
@@ -27,7 +31,6 @@ header h1 {
   padding: 4% 5%;
   border: 3px dashed rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  /* box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.3); */
 }
 
 .post-body {
@@ -40,4 +43,56 @@ header h1 {
 
 .post-time {
   font-size: 2rem;
+  padding-left: 5%;
+  color: #777;
+}
+
+#newPostButton {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  font-size: 2rem;
+  height: 60px;
+  border-radius: 60px;
+}
+
+.form-field {
+  width: 100%;
+}
+
+textarea {
+  height: 120px;
+}
+
+#closePostButton {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  height: unset;
+  padding: 20px;
+  padding-bottom: 5px;
+  border-radius: 50px;
+}
+
+#closePostButton svg {
+  height: 24px;
+  width: 24px;
+}
+
+#newPostForm {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+#newPostFormSubmit {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#newPostFormSubmit button {
+  width: 100%;
 }
