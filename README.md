@@ -1,2 +1,2 @@
-# palpal
-a twitter/reddit style social network demo using meteor
+# corkboard
+a social bulletin board thing using meteor and react
