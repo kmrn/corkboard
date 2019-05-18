@@ -7,7 +7,7 @@ import NewPostForm from './NewPostForm.jsx';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {board: true, newPost: false};
+    this.state = {board: true, newPost: false, newPostFormFilled: false};
   }
 
   toggleNewPostScreen = () => {
@@ -45,9 +45,9 @@ export default class App extends React.Component {
                       strokeWidth="4"/>
               </svg>
             </button>
-            <NewPostForm />
+            <NewPostForm toggleNewPostScreen={this.toggleNewPostScreen} />
             <div id="newPostFormSubmit">
-              <button className="button-primary" type="submit" form="newPostForm" value="Submit" onClick={this.toggleNewPostScreen}>Submit</button>
+              <button className="button-primary" type="submit" form="newPostForm" value="Submit" onClick={this.submitNewPost}>Submit</button>
             </div>
           </div>
         }

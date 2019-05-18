@@ -17,7 +17,9 @@ export default class NewPostForm extends Component {
       text,
       username,
       createdAt: new Date()
-    })
+    });
+
+    this.props.toggleNewPostScreen();
   }
 
   render() {
