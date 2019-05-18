@@ -1,4 +1,33 @@
 body {
+  /* /* padding: 10px;
+  font-family: sans-serif; */
+  background: #f0f0f0;
+}
+
+.top-bar {
+  padding: 5px 15px;
+  text-align: right;
+}
+
+#logo {
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+header h1 {
+  font-style: bold;
+}
+
+.post-card {
+  list-style: none;
+  background: #fff;
+  margin: 20px 10px;
+  padding: 5%;
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.post-body {
   padding: 10px;
-  font-family: sans-serif;
 }
