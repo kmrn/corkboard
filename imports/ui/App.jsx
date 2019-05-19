@@ -33,7 +33,7 @@ export default class App extends React.Component {
         {
           this.state.newPost && 
           <div className="container">
-            <button id="closePostButton" className="button-primary" onClick={this.toggleNewPostScreen}>
+            <a id="closePostButton" onClick={this.toggleNewPostScreen}>
               <svg viewport="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <line x1="2" y1="22" 
                       x2="22" y2="2" 
@@ -44,9 +44,9 @@ export default class App extends React.Component {
                       stroke="white" 
                       strokeWidth="4"/>
               </svg>
-            </button>
+            </a>
             <NewPostForm toggleNewPostScreen={this.toggleNewPostScreen} />
-            <div id="newPostFormSubmit">
+            <div id="newPostFormSubmit" className="container">
               <button className="button-primary" type="submit" form="newPostForm" value="Submit" onClick={this.submitNewPost}>Submit</button>
             </div>
           </div>

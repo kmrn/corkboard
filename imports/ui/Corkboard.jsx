@@ -15,7 +15,7 @@ class Corkboard extends Component {
   render() {
     return (
       <div className="container">
-        <ul>
+        <ul className="post-list">
           {this.renderPosts()}
         </ul>
       </div>

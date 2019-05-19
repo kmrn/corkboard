@@ -50,13 +50,15 @@ header h1 {
 
 #newPostButton {
   position: fixed;
-  bottom: 5%;
-  right: 5%;
+  bottom: 2%;
+  right: 50%;
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   font-size: 2rem;
   height: 60px;
   border-radius: 60px;
+  width: 300px;
+  margin-right: -150px;
 }
 
 .form-field {
@@ -84,8 +86,8 @@ textarea {
 
 #newPostForm {
   max-width: 400px;
-  margin: 0 auto;
-  margin-top: 120px;
+  margin: auto;
+  padding-top: 180px;
 }
 
 #newPostFormSubmit {
@@ -96,4 +98,8 @@ textarea {
 
 #newPostFormSubmit button {
   width: 100%;
+}
+
+.post-list {
+  margin-bottom: 140px;
 }
