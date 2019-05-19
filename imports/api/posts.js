@@ -21,11 +21,13 @@ Meteor.methods({
             createdAt: new Date()
         });
     },
+
     'posts.remove'(postId) {
         check(postId, String);
         // const post = Posts.findOne(postId);
         Posts.remove(postId);
     },
+    
     'posts.like'(postId) {
         check(postId, String);
         Posts.update({_id: postId}, {$inc: {likes: 1}});
