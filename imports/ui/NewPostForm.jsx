@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Posts } from '../api/posts';
+import { Meteor } from 'meteor/meteor';
 
 export default class NewPostForm extends Component {
-
-
   handleSubmit(event) {
     event.preventDefault();
 
@@ -12,14 +11,8 @@ export default class NewPostForm extends Component {
     const text = ReactDOM.findDOMNode(this.refs.textInput).value.trim();
     const username = ReactDOM.findDOMNode(this.refs.nameInput).value.trim();
 
-    Posts.insert({
-      title,
-      text,
-      username,
-      createdAt: new Date()
-    });
-
     this.props.toggleNewPostScreen();
+    Meteor.call('posts.insert', title, text, username);
   }
 
   render() {

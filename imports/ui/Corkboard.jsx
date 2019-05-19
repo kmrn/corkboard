@@ -4,6 +4,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import { Posts } from  '../api/posts.js';
 
 import Post from './Post.jsx';
+import { Meteor } from 'meteor/meteor';
 
 class Corkboard extends Component {
   renderPosts() {
@@ -24,6 +25,8 @@ class Corkboard extends Component {
 }
 
 export default withTracker(() => {
+  Meteor.subscribe('posts');
+
   return {
     posts: Posts.find({}, { sort: { createdAt: -1 } }).fetch()
   };

@@ -103,3 +103,10 @@ textarea {
 .post-list {
   margin-bottom: 140px;
 }
+
+.like-counter {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  float: left;
+}
